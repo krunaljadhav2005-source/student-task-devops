@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Task Manager</title>
+</head>
+
+<body>
+
+<h1>Student Task Manager</h1>
+
+<form method="POST" action="/add">
+    <input type="text" name="task" placeholder="Enter task">
+    <button type="submit">Add Task</button>
+</form>
+
+<h2>Tasks</h2>
+
+<ul>
+{% for task in tasks %}
+    <li>{{ task }}</li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
