@@ -28,8 +28,8 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                sh 'sudo docker build -t krunal123/student-task-app:latest .'
-            }
+                sh 'docker build -t krunal123/student-task-app:latest .'
+          }
         }
 
         stage('Load Image to Minikube') {
